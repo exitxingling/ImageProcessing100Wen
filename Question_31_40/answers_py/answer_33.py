@@ -26,7 +26,7 @@ def dft(img):
 	for c in range(channel):
 		for l in range(L):
 			for k in range(K):
-				G[l, k, c] = np.sum(img[..., c] * np.exp(-2j * np.pi * (x * k / K + y * l / L))) / np.sqrt(K * L)
+				G[l, k, c] = np.sum(img[..., c] * np.exp(-2j * np.pi * (x * k / K + y * l / L))) / np.sqrt(M * N)
 				#for n in range(N):
 				#    for m in range(M):
 				#        v += gray[n, m] * np.exp(-2j * np.pi * (m * k / M + n * l / N))
